@@ -1,0 +1,17 @@
+port: 80
+testmode: 0
+
+s3:
+  protocol: https
+  host: fra1.digitaloceanspaces.com
+  port: 443
+  key: ''
+  secret: ''
+  bucket: pointdisk
+
+log:
+  level: info
+  sendLogsTo: https://logstash.pointspace.io:12201
+
+queue:
+  url: amqp://localhost
